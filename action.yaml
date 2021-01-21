@@ -1,5 +1,5 @@
 # action.yml
-name: 'publish-confluence'
+name: 'publish-to-confluence'
 description: 'Publish sphinx docs to atlassian confluence cloud'
 inputs:
   username:
