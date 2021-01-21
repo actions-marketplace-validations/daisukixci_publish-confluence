@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+INPUT_USERNAME="$1"
+INPUT_APITOKEN="$2"
+INPUT_DOCSDIR="$3"
+
 # install requirements.txt if it exists
 if [ -f requirements.txt ]; then
   pip install --user -r requirements.txt
