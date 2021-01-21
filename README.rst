@@ -40,7 +40,7 @@ to be added to the Github repo.
         with:
           python-version: '3.x'
       - name: publish to confluence
-        uses: pratikmallya/publish-confluence@master
+        uses: daisukixci/publish-confluence@master
         with:
           username: ${{ secrets.atlassianUsername }}
           apitoken: ${{ secrets.atlassianApitoken }}
