@@ -1,12 +1,12 @@
-#!/bin/sh -l
+#!/usr/bin/env bash
 
 # install requirements.txt if it exists
 if [ -f requirements.txt ]; then
   pip install --user -r requirements.txt
 fi
 
-if ! [ -z "$INPUT_DOCSDIR" ]; then
-  cd $INPUT_DOCSDIR
+if [ -n "$INPUT_DOCSDIR" ]; then
+  cd "$INPUT_DOCSDIR" || exit 1
 fi
 
 make confluence \

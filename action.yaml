@@ -12,5 +12,7 @@ inputs:
     description: 'directory in the repo where the docs are located'
     default: ''
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/make.sh
+      shell: bash
